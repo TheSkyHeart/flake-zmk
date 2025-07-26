@@ -21,15 +21,28 @@
         };
     };
 
+    behaviors {
+        shift: shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;
+            hold-trigger-key-positions = <16 19>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp GRAVE          &kp Q  &kp W  &kp E          &kp R                  &kp T               &kp Y        &kp U            &kp I             &kp O    &kp P     &kp LEFT_BRACKET
-&kp LEFT_ALT       &kp A  &kp S  &kp D          &kp F                  &kp G               &kp H        &kp J            &kp K             &kp L    &kp SEMI  &kp APOS
-&kp RIGHT_BRACKET  &kp Z  &kp X  &kp C          &kp V                  &kp B               &kp N        &kp M            &kp COMMA         &kp DOT  &kp FSLH  &kp BACKSLASH
-                   &none  &none  &mt LCTRL DEL  &mt RIGHT_SHIFT SPACE  &mt LEFT_GUI TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &mt RCTRL ESCAPE  &none    &none
+&kp GRAVE          &kp Q  &kp W  &kp E          &kp R                  &kp T               &kp Y        &kp U              &kp I             &kp O    &kp P     &kp LEFT_BRACKET
+&kp LEFT_ALT       &kp A  &kp S  &kp D          &mt LSHIFT F           &kp G               &kp H        &mt RIGHT_SHIFT J  &kp K             &kp L    &kp SEMI  &kp APOS
+&kp RIGHT_BRACKET  &kp Z  &kp X  &kp C          &kp V                  &kp B               &kp N        &kp M              &kp COMMA         &kp DOT  &kp FSLH  &kp BACKSLASH
+                   &none  &none  &mt LCTRL DEL  &mt RIGHT_SHIFT SPACE  &mt LEFT_GUI TAB    &lt 2 ENTER  &lt 1 BACKSPACE    &mt RCTRL ESCAPE  &none    &none
             >;
         };
 
