@@ -1,9 +1,5 @@
 #include "anywhy_flake.dtsi"
 
-&large_transform {
-    col-offset = <6>;
-};
-
 &medium_transform {
     col-offset = <6>;
 };
