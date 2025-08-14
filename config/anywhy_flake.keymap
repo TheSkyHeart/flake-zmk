@@ -157,10 +157,10 @@
         system {
             display-name = "SYSTEM";
             bindings = <
-&rgb_ug RGB_EFR  &rgb_ug RGB_EFF    &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
+&trans           &trans             &trans           &trans           &trans           &trans             &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END        &kp K_REDO  &sys_reset
 &bt BT_CLR       &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp RIGHT   &bootloader
-&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &rgb_ug RGB_OFF  &rgb_ug RGB_ON   &rgb_ug RGB_TOG    &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
-                 &trans             &trans           &trans           &trans           &trans             &trans
+&bt BT_CLR_ALL   &ext_power EP_TOG  &out OUT_TOG     &trans           &trans           &trans             &kp K_LOCK     &kp LS(LC(V))   &kp LS(LC(C))   &kp LS(LC(T))  &kp END     &studio_unlock
+                 &trans             &trans           &trans           &trans           &trans             &trans         &trans          &trans          &trans         &trans
             >;
         };
     };
